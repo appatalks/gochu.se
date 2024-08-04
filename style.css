@@ -1,0 +1,231 @@
+
+
+html { height: 10%; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: courier, "Lucida Grande", Lucida, Verdana, sans-serif;
+    }
+
+.txt[contenteditable] {
+  outline: none;
+}
+
+/* Box ------------------------------------------------------ */
+
+#box {
+  padding: 0px;
+  font-size: 4em;
+  /* font-weight: bold; */
+}
+
+
+/* txt ------------------------------------------------------ */
+
+.txt {
+  color: hsla(0,0%,0%,0);
+  font-weight: bold;
+  text-shadow: #fff 0 0 60px;
+  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+    }
+    @-moz-document url-prefix() { .txt { text-shadow: green 0 0 20px; } } /* FF fix */
+
+#box:hover .txt {
+        text-shadow: red 0 0 2px;
+        transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+
+/* ♥ ------------------------------------------------------ */
+
+.♥ {
+  margin: 0 10px;
+  font-weight: 900;
+  color: hsla(0,0%,0%,0);
+  text-shadow: red 0 0 1px;
+  transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+    }
+
+#box:hover .♥ {
+        text-shadow: red 0 0 2px;
+        transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+}
+  @-moz-document url-prefix() { #box:hover .♥ { text-shadow: green 0 0 20px; } } /* FF fix */
+
+
+
+a {
+font-family: arial, 'times new roman', sans-serif;
+font-size: 1em;
+font-weight: bold;
+color: #00f;
+text-decoration: none;
+} 
+
+/* Remove this when pasting into your Stylesheet! */
+
+
+/* body { font: 100% "Droid Sans Regular", sans-serif; color: #666; background:#eee; } */
+/* body { font: 100% "Droid Sans Regular", sans-serif; color: #666; background-image: url("images/background.jpg"); no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+     }
+*/
+/* END Remove This */
+
+/* @font-face {
+	font-family: 'Droid Sans Regular';
+	src: url('../font/DroidSans.eot');
+	src: local('Droid Sans Regular'), local('DroidSans-Regular'), url('font/DroidSans.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Droid Sans Bold';
+	src: url('../font/DroidSans-Bold.eot');
+	src: local('Droid Sans Bold'), local('DroidSans-Bold'), url('.font/DroidSans-Bold.ttf') format('truetype');
+} */
+
+#contact p { font: 1.1em "Droid Sans Regular", sans-serif; }
+
+#contact legend { font: 1.0em "Droid Sans Bold", sans-serif; }
+
+#contact h1 { margin: 5px 0 5px; font: 1em "Droid Sans Bold", sans-serif; color: #333333; }
+
+#contact { 
+	display: block; 
+	width: 650px;
+	height: 0px;  
+	margin: 75px auto; /* 0px */ 
+	padding: 0px; 
+	border: 0px solid #cbcbcb; 
+	background-color: #FFF; 
+
+	-webkit-border-radius:i5px; 
+	-moz-border-radius:5px; 
+	border-radius:5px; 
+	
+	box-shadow: 0 2px 10px rgba(50, 50, 50, 0.1);
+	-webkit-box-shadow: 0 2px 10px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow: 0 2px 10px rgba(50, 50, 50, 0.1);
+	
+	-webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.8, transparent), to(rgba(255,255,255,0.7)));
+}
+
+/* Form style */
+
+#contact input { 
+	width: 300px; 
+	padding: 3px; 
+	color: #666; 
+	background: #f5f5f5; 
+	border: 2px solid #ccc; 
+	margin: 2px 0; 
+	font: 1.0em "Droid Sans Bold", sans-serif;
+	-webkit-border-radius:5px; 
+	-moz-border-radius:5px; 
+	border-radius:5px; 
+	vertical-align: top;
+	
+	transition: all 1.5s ease-in-out; 
+	-webkit-transition: all 1.5s ease-in-out; 
+	-moz-transition: all 1.5s ease-in-out; 
+	
+	box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+	-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+	-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0); 
+} 
+
+
+#contact input:focus { 
+	border: 2px solid #ddd; 
+	background-color: #fff; 
+	color:#333; 
+	outline: none;
+	position: relative;
+	z-index: 5;
+	
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	
+	transition: all 0.25s ease-in-out; 
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out; 
+}
+#contact input.error {
+	box-shadow: 0 0 5px rgba(204, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px rgba(204, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 5px rgba(204, 0, 0, 0.5);
+	border: 1px solid #faabab;
+	background: #fef3f3
+}
+#contact input.submit { 
+	width: auto; 
+	cursor: pointer; 
+	position: relative;
+	border: 2px solid #282828; 
+	color:#fff; 
+	padding: 2px 10px;
+	text-decoration: none;
+	font-size: 1.0em;
+	
+	background:#555; 
+	
+	background:-webkit-gradient(
+	    linear,
+	    left bottom,
+    	left top,
+	    color-stop(0.12, rgb(60,60,60)),
+	    color-stop(1, rgb(85,85,85))
+	);
+	background:-moz-linear-gradient(
+	    center bottom,
+	    rgb(60,60,60) 12%,
+    	rgb(85,85,85) 100%
+	);
+	
+	box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+#contact input.submit:hover { 
+	background: #282828 !important; 
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none; 
+}
+#contact input.submit:active, #contact input.submit:focus { 
+	top: 1px; 
+}
+
+#contact input[type="submit"][disabled] { background:#888; }
+#contact fieldset { padding:10px; border:2px solid #eee; -webkit-border-radius:10px; -moz-border-radius:10px; margin:0 0 4px; }
+#contact legend { padding:3px 85px; font-weight:bold; color:#999; border:2px solid #eee; -webkit-border-radius:5px; -moz-border-radius:5px; margin-bottom:0 !important; margin-bottom:10px; }
+
+#email_wrong {color: red;}
+#email_right {color: green;}
+
+.hit-the-floor {
+color: #fff;
+font-size: 48px;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.hit-the-floor {
+  text-align: center;
+}
